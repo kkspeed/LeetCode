@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "LeetCode",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"val",
+		"isInsufficient"
+	],
+	"name" : "KthBSTSolveResult",
+	"type" : "normal"
+}
