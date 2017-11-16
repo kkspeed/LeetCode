@@ -7,6 +7,6 @@ solve230KthSmallestBST: aTreeNode kth: k
 					k - val = 1
 						ifTrue: [ KthBSTSolveResult new setValue: aTreeNode val isInsufficient: false ]
 						ifFalse: [ (self solve230KthSmallestBST: aTreeNode right kth: k - val - 1) 
-							ifInsufficient: [ :v | KthBSTSolveResult new setValue: k - v isInsufficient: true ] 
+							ifInsufficient: [ :v | KthBSTSolveResult new setValue: val + v + 1 isInsufficient: true ] 
 							ifNotInsufficient: [ :v | KthBSTSolveResult new setValue: v isInsufficient: false ] ] ]
 				ifNotInsufficient: [ :val | KthBSTSolveResult new setValue: val isInsufficient: false ] ]
